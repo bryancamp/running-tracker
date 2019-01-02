@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RunningTracker.WeatherConditions.Lib
+namespace RunningTracker.WeatherConditions
 {
     public enum PrecipitationType
     {
@@ -10,17 +10,28 @@ namespace RunningTracker.WeatherConditions.Lib
         Sleet
     }
 
-    public class Precipitation
+    public enum PrecipitationUnit
+    {
+        Millimeters,
+        Centimeters,
+        Inches,
+        Feet
+    }
+
+    public struct Precipitation
     {
         public Precipitation(
-            PrecipitationType precipitationType,
-            decimal amount = 0)
+            PrecipitationType type,
+            PrecipitationUnit unit,
+            double amount = 0)
         {
-            PrecipitationType = precipitationType;
+            PrecipitationType = type;
+            Unit = unit;
             Amount = amount;
-        }
 
+        }
         public PrecipitationType PrecipitationType { get; }
-        public decimal Amount { get; }
+        public PrecipitationUnit Unit { get; }
+        public double Amount { get; }
     }
 }

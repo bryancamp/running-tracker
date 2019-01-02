@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v2.2": {
       "RunningTracker.Console/1.0.0": {
         "dependencies": {
-          "RunningTracker.RunningShoes.Lib": "1.0.0"
+          "RunningTracker.RunningShoes.Lib": "1.0.0",
+          "RunningTracker.WeatherConditions.Lib": "1.0.0"
         },
         "runtime": {
           "RunningTracker.Console.dll": {}
@@ -17,6 +18,11 @@
       "RunningTracker.RunningShoes.Lib/1.0.0": {
         "runtime": {
           "RunningTracker.RunningShoes.Lib.dll": {}
+        }
+      },
+      "RunningTracker.WeatherConditions.Lib/1.0.0": {
+        "runtime": {
+          "RunningTracker.WeatherConditions.Lib.dll": {}
         }
       }
     }
@@ -28,6 +34,11 @@
       "sha512": ""
     },
     "RunningTracker.RunningShoes.Lib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RunningTracker.WeatherConditions.Lib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

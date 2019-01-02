@@ -217,6 +217,16 @@
         "runtime": {
           "bin/placeholder/RunningTracker.RunningShoes.Lib.dll": {}
         }
+      },
+      "RunningTracker.WeatherConditions.Lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/RunningTracker.WeatherConditions.Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RunningTracker.WeatherConditions.Lib.dll": {}
+        }
       }
     }
   },
@@ -693,12 +703,18 @@
       "type": "project",
       "path": "../RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj",
       "msbuildProject": "../RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj"
+    },
+    "RunningTracker.WeatherConditions.Lib/1.0.0": {
+      "type": "project",
+      "path": "../RunningTracker.WeatherConditions.Lib/RunningTracker.WeatherConditions.Lib.csproj",
+      "msbuildProject": "../RunningTracker.WeatherConditions.Lib/RunningTracker.WeatherConditions.Lib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
-      "RunningTracker.RunningShoes.Lib >= 1.0.0"
+      "RunningTracker.RunningShoes.Lib >= 1.0.0",
+      "RunningTracker.WeatherConditions.Lib >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -731,6 +747,9 @@
           "projectReferences": {
             "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj": {
               "projectPath": "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj"
+            },
+            "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.WeatherConditions.Lib/RunningTracker.WeatherConditions.Lib.csproj": {
+              "projectPath": "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.WeatherConditions.Lib/RunningTracker.WeatherConditions.Lib.csproj"
             }
           }
         }

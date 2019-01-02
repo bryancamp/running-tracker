@@ -7,5 +7,6 @@
 
   <ItemGroup>
     <ProjectReference Include="../RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj" />
+    <ProjectReference Include="../RunningTracker.WeatherConditions.Lib/RunningTracker.WeatherConditions.Lib.csproj" />
   </ItemGroup>
 </Project>
