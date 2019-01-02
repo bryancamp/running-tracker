@@ -208,6 +208,20 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "RunningTracker.Running.Lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "RunningTracker.RunningShoes.Lib": "1.0.0",
+          "RunningTracker.WeatherConditions.Lib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RunningTracker.Running.Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RunningTracker.Running.Lib.dll": {}
+        }
+      },
       "RunningTracker.RunningShoes.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -699,6 +713,11 @@
         "netstandard.library.nuspec"
       ]
     },
+    "RunningTracker.Running.Lib/1.0.0": {
+      "type": "project",
+      "path": "../RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj",
+      "msbuildProject": "../RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj"
+    },
     "RunningTracker.RunningShoes.Lib/1.0.0": {
       "type": "project",
       "path": "../RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj",
@@ -713,6 +732,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
+      "RunningTracker.Running.Lib >= 1.0.0",
       "RunningTracker.RunningShoes.Lib >= 1.0.0",
       "RunningTracker.WeatherConditions.Lib >= 1.0.0"
     ]
@@ -745,6 +765,9 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
+            "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj": {
+              "projectPath": "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj"
+            },
             "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj": {
               "projectPath": "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj"
             },

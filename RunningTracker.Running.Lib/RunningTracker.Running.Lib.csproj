@@ -1,13 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="../RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj" />
     <ProjectReference Include="../RunningTracker.WeatherConditions.Lib/RunningTracker.WeatherConditions.Lib.csproj" />
-    <ProjectReference Include="../RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj" />
   </ItemGroup>
+
 </Project>
