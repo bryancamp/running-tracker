@@ -1,0 +1,9 @@
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/bin/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.deps.json
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/bin/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.dll
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/bin/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.pdb
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.csprojAssemblyReference.cache
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.csproj.CoreCompileInputs.cache
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.AssemblyInfoInputs.cache
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.AssemblyInfo.cs
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.dll
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.pdb

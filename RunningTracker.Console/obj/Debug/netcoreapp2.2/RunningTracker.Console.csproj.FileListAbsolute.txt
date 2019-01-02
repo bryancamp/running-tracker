@@ -1,0 +1,14 @@
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/obj/Debug/netcoreapp2.2/RunningTracker.Console.csprojAssemblyReference.cache
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/obj/Debug/netcoreapp2.2/RunningTracker.Console.csproj.CoreCompileInputs.cache
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/obj/Debug/netcoreapp2.2/RunningTracker.Console.AssemblyInfoInputs.cache
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/obj/Debug/netcoreapp2.2/RunningTracker.Console.AssemblyInfo.cs
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.Console.deps.json
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.Console.runtimeconfig.json
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.Console.runtimeconfig.dev.json
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.Console.dll
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.Console.pdb
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/obj/Debug/netcoreapp2.2/RunningTracker.Console.dll
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/obj/Debug/netcoreapp2.2/RunningTracker.Console.pdb
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/obj/Debug/netcoreapp2.2/RunningTracker.Console.csproj.CopyComplete
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.RunningShoes.Lib.dll
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.RunningShoes.Lib.pdb
