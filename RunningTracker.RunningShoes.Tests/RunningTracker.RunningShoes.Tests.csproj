@@ -1,15 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-
     <IsPackable>false</IsPackable>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="nunit" Version="3.11.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.11.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="nunit" Version="3.11.0"/>
+    <PackageReference Include="NUnit3TestAdapter" Version="3.11.0"/>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0"/>
+    <PackageReference Include="NSubstitute" Version="4.0.0-rc1"/>
+    <ProjectReference Include="../RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj"/>
+    <ProjectReference Include="../RunningTracker.RunningShoes.Providers.Lib/RunningTracker.RunningShoes.Providers.Lib.csproj"/>
+    <ProjectReference Include="../RunningTracker.WeatherConditions.Lib/RunningTracker.WeatherConditions.Lib.csproj"/>
+    <ProjectReference Include="../RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj"/>
   </ItemGroup>
-
 </Project>

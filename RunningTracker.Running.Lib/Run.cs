@@ -4,7 +4,16 @@ using RunningTracker.WeatherConditions;
 
 namespace RunningTracker.Running
 {
-    public enum RunningLocation
+    public class RunningException : System.Exception
+    {
+        public RunningException(string message)
+            : base(message)
+            {
+
+            }
+    }
+
+    public enum Location
     {
         Outside,
         Treadmill,
@@ -14,12 +23,17 @@ namespace RunningTracker.Running
     public class Run
     {
         public Run(
-            RunningTime time,
-            RunningDistance distance,
-            RunningLocation location,
+            Time time,
+            Distance distance,
+            Location location,
             Shoe shoe,
             Precipitation precipitation)
         {
+            if (time == null)
+                throw new ArgumentNullException(nameof(time));
+            if (shoe == null)
+                throw new ArgumentNullException(nameof(shoe));
+
             Time = time;
             Distance = distance;
             Location = location;
@@ -27,9 +41,9 @@ namespace RunningTracker.Running
             Precipitation = precipitation;
         }
 
-        public RunningTime Time { get; }
-        public RunningDistance Distance { get; }
-        public RunningLocation Location { get; }
+        public Time Time { get; }
+        public Distance Distance { get; }
+        public Location Location { get; }
         public Shoe Shoe { get; }
         public Precipitation Precipitation { get; }
     }

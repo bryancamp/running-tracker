@@ -21,6 +21,9 @@ namespace RunningTracker.RunningShoes
             double size,
             DateTime releaseDate)      
         {
+            if (size < 0)
+                throw new ArgumentException("Shoe size must be positive.");
+
             Brand = brand;
             Model = model;
             Size = size;

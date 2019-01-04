@@ -1,0 +1,16 @@
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/bin/Debug/netstandard2.0/RunningTracker.RunningShoes.Providers.Lib.deps.json
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/bin/Debug/netstandard2.0/RunningTracker.RunningShoes.Providers.Lib.dll
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/bin/Debug/netstandard2.0/RunningTracker.RunningShoes.Providers.Lib.pdb
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/bin/Debug/netstandard2.0/RunningTracker.Running.Lib.dll
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/bin/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.dll
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/bin/Debug/netstandard2.0/RunningTracker.WeatherConditions.Lib.dll
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/bin/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.pdb
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/bin/Debug/netstandard2.0/RunningTracker.WeatherConditions.Lib.pdb
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/bin/Debug/netstandard2.0/RunningTracker.Running.Lib.pdb
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Providers.Lib.csprojAssemblyReference.cache
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Providers.Lib.csproj.CoreCompileInputs.cache
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Providers.Lib.AssemblyInfoInputs.cache
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Providers.Lib.AssemblyInfo.cs
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Providers.Lib.csproj.CopyComplete
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Providers.Lib.dll
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Providers.Lib/obj/Debug/netstandard2.0/RunningTracker.RunningShoes.Providers.Lib.pdb
