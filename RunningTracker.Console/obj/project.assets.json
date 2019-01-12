@@ -222,6 +222,37 @@
           "bin/placeholder/RunningTracker.Running.Lib.dll": {}
         }
       },
+      "RunningTracker.Running.Performance.Lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "RunningTracker.Running.Lib": "1.0.0",
+          "RunningTracker.RunningShoes.Lib": "1.0.0",
+          "RunningTracker.RunningShoes.Providers.Lib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RunningTracker.Running.Performance.Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RunningTracker.Running.Performance.Lib.dll": {}
+        }
+      },
+      "RunningTracker.RunningShoes.Decisions.Lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "RunningTracker.Running.Lib": "1.0.0",
+          "RunningTracker.RunningShoes.Lib": "1.0.0",
+          "RunningTracker.RunningShoes.Providers.Lib": "1.0.0",
+          "RunningTracker.WeatherConditions.Lib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RunningTracker.RunningShoes.Decisions.Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RunningTracker.RunningShoes.Decisions.Lib.dll": {}
+        }
+      },
       "RunningTracker.RunningShoes.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -733,6 +764,16 @@
       "path": "../RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj",
       "msbuildProject": "../RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj"
     },
+    "RunningTracker.Running.Performance.Lib/1.0.0": {
+      "type": "project",
+      "path": "../RunningTracker.Running.Performance.Lib/RunningTracker.Running.Performance.Lib.csproj",
+      "msbuildProject": "../RunningTracker.Running.Performance.Lib/RunningTracker.Running.Performance.Lib.csproj"
+    },
+    "RunningTracker.RunningShoes.Decisions.Lib/1.0.0": {
+      "type": "project",
+      "path": "../RunningTracker.RunningShoes.Decisions.Lib/RunningTracker.RunningShoes.Decisions.Lib.csproj",
+      "msbuildProject": "../RunningTracker.RunningShoes.Decisions.Lib/RunningTracker.RunningShoes.Decisions.Lib.csproj"
+    },
     "RunningTracker.RunningShoes.Lib/1.0.0": {
       "type": "project",
       "path": "../RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj",
@@ -753,6 +794,8 @@
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
       "RunningTracker.Running.Lib >= 1.0.0",
+      "RunningTracker.Running.Performance.Lib >= 1.0.0",
+      "RunningTracker.RunningShoes.Decisions.Lib >= 1.0.0",
       "RunningTracker.RunningShoes.Lib >= 1.0.0",
       "RunningTracker.RunningShoes.Providers.Lib >= 1.0.0",
       "RunningTracker.WeatherConditions.Lib >= 1.0.0"
@@ -788,6 +831,12 @@
           "projectReferences": {
             "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj": {
               "projectPath": "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj"
+            },
+            "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Performance.Lib/RunningTracker.Running.Performance.Lib.csproj": {
+              "projectPath": "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Performance.Lib/RunningTracker.Running.Performance.Lib.csproj"
+            },
+            "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Decisions.Lib/RunningTracker.RunningShoes.Decisions.Lib.csproj": {
+              "projectPath": "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Decisions.Lib/RunningTracker.RunningShoes.Decisions.Lib.csproj"
             },
             "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj": {
               "projectPath": "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj"

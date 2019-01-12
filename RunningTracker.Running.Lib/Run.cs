@@ -23,25 +23,27 @@ namespace RunningTracker.Running
     public class Run
     {
         public Run(
-            Time time,
+            DateTime runDate,
+            Time duration,
             Distance distance,
             Location location,
             Shoe shoe,
             Precipitation precipitation)
         {
-            if (time == null)
-                throw new ArgumentNullException(nameof(time));
+            if (duration == null)
+                throw new ArgumentNullException(nameof(duration));
             if (shoe == null)
                 throw new ArgumentNullException(nameof(shoe));
 
-            Time = time;
+            RunDate = runDate;
+            Duration = duration;
             Distance = distance;
             Location = location;
             Shoe = shoe;
             Precipitation = precipitation;
         }
-
-        public Time Time { get; }
+        public DateTime RunDate { get; }
+        public Time Duration { get; }
         public Distance Distance { get; }
         public Location Location { get; }
         public Shoe Shoe { get; }

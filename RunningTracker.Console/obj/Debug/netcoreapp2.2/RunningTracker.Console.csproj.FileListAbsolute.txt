@@ -18,3 +18,7 @@
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.Running.Lib.pdb
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.RunningShoes.Providers.Lib.dll
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.RunningShoes.Providers.Lib.pdb
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.RunningShoes.Decisions.Lib.dll
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.RunningShoes.Decisions.Lib.pdb
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.Running.Performance.Lib.dll
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Console/bin/Debug/netcoreapp2.2/RunningTracker.Running.Performance.Lib.pdb

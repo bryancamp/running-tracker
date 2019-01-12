@@ -19,7 +19,9 @@ namespace RunningTracker.RunningShoes
             Brand brand,
             string model,
             double size,
-            DateTime releaseDate)      
+            DateTime releaseDate,
+            ShoeTransaction transaction,
+            Usage usage)      
         {
             if (size < 0)
                 throw new ArgumentException("Shoe size must be positive.");
@@ -28,11 +30,16 @@ namespace RunningTracker.RunningShoes
             Model = model;
             Size = size;
             ReleaseDate = releaseDate;
+            Transaction = transaction;
+            Usage = usage;
         }
+
 
         public Brand Brand { get; }
         public string Model { get; }
         public double Size { get; }
         public DateTime ReleaseDate { get; }
+        public ShoeTransaction Transaction { get; }
+        public Usage Usage { get; }
     }
 }

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj" />
+    <ProjectReference Include="../RunningTracker.RunningShoes.Providers.Lib/RunningTracker.RunningShoes.Providers.Lib.csproj" />    
+    <ProjectReference Include="../RunningTracker.WeatherConditions.Lib/RunningTracker.WeatherConditions.Lib.csproj" />
+    <ProjectReference Include="../RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj" />    
+  </ItemGroup>
+
+</Project>

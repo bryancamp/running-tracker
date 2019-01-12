@@ -28,8 +28,8 @@ namespace RunningTracker.WeatherConditions
             PrecipitationType = type;
             Unit = unit;
             Amount = amount;
-
         }
+        
         public PrecipitationType PrecipitationType { get; }
         public PrecipitationUnit Unit { get; }
         public double Amount { get; }
