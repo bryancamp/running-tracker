@@ -15,7 +15,7 @@ namespace RunningTracker.Console
         static void Main(string[] args)
         {
             // All runs, inside and outside.
-            IProvideRuns runProvider = new HardcodedRunProvider();
+            IProvideRuns runProvider = new CsvBackedRunProvder();
             var allRuns = runProvider.GetAllRuns();
             var allOutsideRuns = runProvider.GetRuns(Location.Outside);
             var allInsideRuns = runProvider.GetRuns(Location.Treadmill);

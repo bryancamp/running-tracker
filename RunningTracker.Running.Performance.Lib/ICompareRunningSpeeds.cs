@@ -5,7 +5,12 @@ namespace RunningTracker.Running.Performance
 {
     public class RunningSpeedComparison
     {
+        public RunningSpeedComparison(IEnumerable<Run> fastest)
+        {
+            Fastest = fastest;
+        }
 
+        public IEnumerable<Run> Fastest { get; }
     }
 
     public interface ICompareRunningSpeeds
@@ -17,7 +22,7 @@ namespace RunningTracker.Running.Performance
     {
         public RunningSpeedComparison Compare(IEnumerable<Run> run1, IEnumerable<Run> run2)
         {
-            throw new NotImplementedException();
+            return new RunningSpeedComparison(run1);
         }
     }
 
