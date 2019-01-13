@@ -28,7 +28,8 @@ namespace RunningTracker.Running
             Distance distance,
             Location location,
             Shoe shoe,
-            Precipitation precipitation)
+            Precipitation precipitation,
+            Temperature temperature)
         {
             if (duration == null)
                 throw new ArgumentNullException(nameof(duration));
@@ -41,6 +42,7 @@ namespace RunningTracker.Running
             Location = location;
             Shoe = shoe;
             Precipitation = precipitation;
+            Temperature = temperature;
         }
         public DateTime RunDate { get; }
         public Time Duration { get; }
@@ -48,5 +50,6 @@ namespace RunningTracker.Running
         public Location Location { get; }
         public Shoe Shoe { get; }
         public Precipitation Precipitation { get; }
+        public Temperature Temperature { get; }
     }
 }

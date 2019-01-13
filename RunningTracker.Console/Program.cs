@@ -7,6 +7,7 @@ using RunningTracker.WeatherConditions;
 using RunningTracker.Running;
 using RunningTracker.Running.Performance;
 using RunningTracker.RunningShoes.Decisions;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace RunningTracker.Console
 {

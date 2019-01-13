@@ -13,7 +13,6 @@ namespace RunningTracker.Running
          IEnumerable<Run> GetRuns(Brand brand);         
     }
 
-
     public class CsvBackedRunProvder: IProvideRuns
     {
         private readonly List<Run> _allRuns;
@@ -104,10 +103,15 @@ namespace RunningTracker.Running
             if (!Enum.TryParse(tokens[16], out precipitationUnit))
                 throw new FormatException("Invalid precipitation unit.");
 
+            TemperatureUnit temperatureUnit;
+            if (!Enum.TryParse(tokens[18], out temperatureUnit))
+                throw new FormatException("Invalid temperature unit.");
+
             var transaction = new ShoeTransaction(Convert.ToDecimal(tokens[11]), DateTime.Parse(tokens[12]), tokens[13]);
             var usage = new Usage(Convert.ToDouble(tokens[9]), Convert.ToInt32(tokens[10]));                        
             var shoe = new Shoe(brand, tokens[6], Convert.ToDouble(tokens[7]), DateTime.Parse(tokens[8]), transaction, usage);
             var precipitation = new Precipitation(precipitationType, precipitationUnit, Convert.ToDouble(tokens[15]));
+            var temperature = new Temperature(Convert.ToDecimal(tokens[17]), temperatureUnit);
 
             var run = new Run(
                 DateTime.Parse(tokens[0]),
@@ -115,7 +119,8 @@ namespace RunningTracker.Running
                 new Distance(Convert.ToDouble(tokens[2]), DistanceUnit.Miles),
                 runLocation,
                 shoe,
-                precipitation);
+                precipitation,
+                temperature);
 
             return run;
         }
@@ -180,7 +185,8 @@ namespace RunningTracker.Running
                     new Distance(9, DistanceUnit.Miles), 
                     Location.Outside, 
                     null, 
-                    new Precipitation(PrecipitationType.None, PrecipitationUnit.Inches)));
+                    new Precipitation(PrecipitationType.None, PrecipitationUnit.Inches),
+                    new Temperature(75, TemperatureUnit.Farenheit)));
         }
 
         private void AddRun(Run r)
