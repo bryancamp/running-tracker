@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="../RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj" />
-    <ProjectReference Include="../RunningTracker.RunningShoes.Providers.Lib/RunningTracker.RunningShoes.Providers.Lib.csproj" />    
     <ProjectReference Include="../RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj" />        
     </ItemGroup>
 </Project>

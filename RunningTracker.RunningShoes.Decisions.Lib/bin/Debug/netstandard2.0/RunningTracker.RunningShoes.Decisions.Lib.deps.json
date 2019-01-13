@@ -12,7 +12,6 @@
           "NETStandard.Library": "2.0.3",
           "RunningTracker.Running.Lib": "1.0.0",
           "RunningTracker.RunningShoes.Lib": "1.0.0",
-          "RunningTracker.RunningShoes.Providers.Lib": "1.0.0",
           "RunningTracker.WeatherConditions.Lib": "1.0.0"
         },
         "runtime": {
@@ -37,16 +36,6 @@
       "RunningTracker.RunningShoes.Lib/1.0.0": {
         "runtime": {
           "RunningTracker.RunningShoes.Lib.dll": {}
-        }
-      },
-      "RunningTracker.RunningShoes.Providers.Lib/1.0.0": {
-        "dependencies": {
-          "RunningTracker.Running.Lib": "1.0.0",
-          "RunningTracker.RunningShoes.Lib": "1.0.0",
-          "RunningTracker.WeatherConditions.Lib": "1.0.0"
-        },
-        "runtime": {
-          "RunningTracker.RunningShoes.Providers.Lib.dll": {}
         }
       },
       "RunningTracker.WeatherConditions.Lib/1.0.0": {
@@ -82,11 +71,6 @@
       "sha512": ""
     },
     "RunningTracker.RunningShoes.Lib/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "RunningTracker.RunningShoes.Providers.Lib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
