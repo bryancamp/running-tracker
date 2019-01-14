@@ -31,10 +31,14 @@ namespace RunningTracker.Running
             Precipitation precipitation,
             Temperature temperature)
         {
+            if (runDate == null)
+                throw new ArgumentNullException(nameof(runDate));
             if (duration == null)
                 throw new ArgumentNullException(nameof(duration));
             if (shoe == null)
                 throw new ArgumentNullException(nameof(shoe));
+            if (temperature == null)
+                throw new ArgumentNullException(nameof(temperature));
 
             RunDate = runDate;
             Duration = duration;

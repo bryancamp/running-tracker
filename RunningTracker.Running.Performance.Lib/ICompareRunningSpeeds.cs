@@ -22,6 +22,7 @@ namespace RunningTracker.Running.Performance
     {
         public RunningSpeedComparison Compare(IEnumerable<Run> run1, IEnumerable<Run> run2)
         {
+            // TODO: implement this
             return new RunningSpeedComparison(run1);
         }
     }

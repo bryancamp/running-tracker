@@ -13,6 +13,7 @@ namespace RunningTracker.RunningShoes.Decisions
     {
         public bool ShouldPurchase(IEnumerable<Run> runs)
         {
+            // TODO: Implement this
             foreach(var run in runs)
             {
             }

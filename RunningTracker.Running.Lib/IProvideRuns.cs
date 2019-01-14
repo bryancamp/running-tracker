@@ -13,6 +13,8 @@ namespace RunningTracker.Running
          IEnumerable<Run> GetRuns(Brand brand);         
     }
 
+    // TODO: Next on the list, back this by a NoSQL database, 
+    //       or .JSON file. We will need a GUI for data entry...
     public class CsvBackedRunProvder: IProvideRuns
     {
         private readonly List<Run> _allRuns;
@@ -49,11 +51,11 @@ namespace RunningTracker.Running
 
          private void ParseFile(string filePath)
          {
-            FileStream fileStream = new FileStream(filePath, FileMode.Open);
+            var fileStream = new FileStream(filePath, FileMode.Open);
             using (StreamReader reader = new StreamReader(fileStream))
             {
                 // Ignore header
-                string lineInFile = reader.ReadLine();
+                var lineInFile = reader.ReadLine();
 
                 while((lineInFile = reader.ReadLine()) != null)
                 {
@@ -83,9 +85,6 @@ namespace RunningTracker.Running
         private Run FromLineInFile(string lineInFile)
         {
             var tokens = lineInFile.Split(',');
-
-            // TODO: back this by a NoSQL database, or .JSON file, time permitting.
-            //       we will need a GUI for data entry...
 
             Location runLocation;
             if (!Enum.TryParse(tokens[4], out runLocation))
@@ -142,71 +141,5 @@ namespace RunningTracker.Running
          {
              throw new NotImplementedException();
          }
-    }
-
-    public class HardcodedRunProvider : IProvideRuns
-    {
-        private readonly List<Run> _allRuns;
-        private readonly Dictionary<Location, List<Run>> _locationToRuns;
-        private readonly Dictionary<Brand, List<Run>> _shoeBrandToRuns;
-
-        public HardcodedRunProvider()
-        {
-            _allRuns = new List<Run>();
-            _locationToRuns = new Dictionary<Location, List<Run>>();
-            _shoeBrandToRuns = new Dictionary<Brand, List<Run>>();
-        }
-
-        public IEnumerable<Run> GetAllRuns()
-        {
-            return _allRuns;
-        }        
-
-        public IEnumerable<Run> GetRuns(Location location)
-        {
-            List<Run> runs;
-            _locationToRuns.TryGetValue(location, out runs);
-            return runs;
-        }
-
-        public IEnumerable<Run> GetRuns(Brand brand)
-        {
-            List<Run> runs;
-            _shoeBrandToRuns.TryGetValue(brand, out runs);
-            return runs;
-        }
-
-        private void Initialize()
-        {
-            AddRun(
-                new Run(
-                    new DateTime(2018, 1, 2, 9, 30, 0),
-                    new Time(1.5, TimeUnit.Hours), 
-                    new Distance(9, DistanceUnit.Miles), 
-                    Location.Outside, 
-                    null, 
-                    new Precipitation(PrecipitationType.None, PrecipitationUnit.Inches),
-                    new Temperature(75, TemperatureUnit.Farenheit)));
-        }
-
-        private void AddRun(Run r)
-        {
-            _allRuns.Add(r);
-
-            List<Run> runs;
-            if (!_locationToRuns.TryGetValue(r.Location, out runs))
-            {
-                runs = new List<Run>();
-                _locationToRuns[r.Location] = runs;
-            }
-            _locationToRuns[r.Location].Add(r);
-
-            if (!_shoeBrandToRuns.TryGetValue(r.Shoe.Brand, out runs))
-            {
-                runs = new List<Run>();
-                _shoeBrandToRuns[r.Shoe.Brand] = runs;
-            }
-            _shoeBrandToRuns[r.Shoe.Brand].Add(r);
-        }
     }
 }

@@ -15,15 +15,19 @@ namespace RunningTracker.Console
     {
         static void Main(string[] args)
         {
+            // Register all components and build our dependency tree.
             var serviceController = new ServiceCollection()
                 .AddSingleton<IAppService, RunningTrackerService>();            
             RunningServiceConfiguration.Register(serviceController);
             RunningShoeServiceConfiguration.Register(serviceController);
             RunningPerformanceServiceConfiguration.Register(serviceController);
-            
+
+            // Start the app after we've registered all of our dependencies.            
             var serviceProvider = serviceController.BuildServiceProvider();
             var appService = serviceProvider.GetService<IAppService>();
-            appService.RunAsync().Wait();
+            var task = appService.GetStartupTask();
+            task.Start();
+            task.Wait();
         }
     }
 }
