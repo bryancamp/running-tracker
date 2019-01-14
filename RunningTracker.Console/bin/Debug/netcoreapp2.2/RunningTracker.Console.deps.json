@@ -41,6 +41,8 @@
       },
       "RunningTracker.Running.Lib/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
           "RunningTracker.RunningShoes.Lib": "1.0.0",
           "RunningTracker.WeatherConditions.Lib": "1.0.0"
         },
@@ -50,6 +52,8 @@
       },
       "RunningTracker.Running.Performance.Lib/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
           "RunningTracker.Running.Lib": "1.0.0",
           "RunningTracker.RunningShoes.Lib": "1.0.0"
         },
@@ -59,6 +63,8 @@
       },
       "RunningTracker.RunningShoes.Decisions.Lib/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
           "RunningTracker.Running.Lib": "1.0.0",
           "RunningTracker.RunningShoes.Lib": "1.0.0",
           "RunningTracker.WeatherConditions.Lib": "1.0.0"
@@ -68,11 +74,19 @@
         }
       },
       "RunningTracker.RunningShoes.Lib/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
+        },
         "runtime": {
           "RunningTracker.RunningShoes.Lib.dll": {}
         }
       },
       "RunningTracker.WeatherConditions.Lib/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
+        },
         "runtime": {
           "RunningTracker.WeatherConditions.Lib.dll": {}
         }

@@ -233,6 +233,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
           "RunningTracker.RunningShoes.Lib": "1.0.0",
           "RunningTracker.WeatherConditions.Lib": "1.0.0"
         },
@@ -247,6 +249,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
           "RunningTracker.Running.Lib": "1.0.0",
           "RunningTracker.RunningShoes.Lib": "1.0.0"
         },
@@ -261,6 +265,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
           "RunningTracker.Running.Lib": "1.0.0",
           "RunningTracker.RunningShoes.Lib": "1.0.0",
           "RunningTracker.WeatherConditions.Lib": "1.0.0"
@@ -275,6 +281,10 @@
       "RunningTracker.RunningShoes.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
+        },
         "compile": {
           "bin/placeholder/RunningTracker.RunningShoes.Lib.dll": {}
         },
@@ -285,6 +295,10 @@
       "RunningTracker.WeatherConditions.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
+        },
         "compile": {
           "bin/placeholder/RunningTracker.WeatherConditions.Lib.dll": {}
         },

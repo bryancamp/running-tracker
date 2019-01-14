@@ -1,10 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-//using RunningTracker.WeatherConditions;
 using RunningTracker.RunningShoes;
 
-namespace RunningTracker.RunningShoes.Providers
+namespace RunningTracker.RunningShoes
 {
     public interface IProvideRunningShoes
     {
