@@ -1,3 +1,5 @@
+using RunningTracker.RunningShoes;
+
 namespace RunningTracker.Running
 {
     public enum DistanceUnit
@@ -14,7 +16,7 @@ namespace RunningTracker.Running
             DistanceUnit unit)
         {
             if (value < 0)
-                throw new RunningShoes.RunningShoeException("Distance must not be negative.");
+                throw new RunningShoeException("Distance must not be negative.");
                 
             Value = value;
             Unit = unit;
