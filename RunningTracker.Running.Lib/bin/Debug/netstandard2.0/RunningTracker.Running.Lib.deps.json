@@ -12,7 +12,6 @@
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
           "NETStandard.Library": "2.0.3",
-          "RunningTracker.RunningShoes.Lib": "1.0.0",
           "RunningTracker.WeatherConditions.Lib": "1.0.0"
         },
         "runtime": {
@@ -42,15 +41,6 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
-        }
-      },
-      "RunningTracker.RunningShoes.Lib/1.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "2.2.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
-        },
-        "runtime": {
-          "RunningTracker.RunningShoes.Lib.dll": {}
         }
       },
       "RunningTracker.WeatherConditions.Lib/1.0.0": {
@@ -97,11 +87,6 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
-    },
-    "RunningTracker.RunningShoes.Lib/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "RunningTracker.WeatherConditions.Lib/1.0.0": {
       "type": "project",

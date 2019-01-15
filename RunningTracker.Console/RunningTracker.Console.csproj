@@ -4,10 +4,8 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="../RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj"/>
     <ProjectReference Include="../RunningTracker.WeatherConditions.Lib/RunningTracker.WeatherConditions.Lib.csproj"/>
     <ProjectReference Include="../RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj"/>
-    <ProjectReference Include="../RunningTracker.RunningShoes.Decisions.Lib/RunningTracker.RunningShoes.Decisions.Lib.csproj"/>
     <ProjectReference Include="../RunningTracker.Running.Performance.Lib/RunningTracker.Running.Performance.Lib.csproj"/>
   </ItemGroup>
   <ItemGroup>

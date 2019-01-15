@@ -1,10 +1,10 @@
 using System;
 
-namespace RunningTracker.RunningShoes
+namespace RunningTracker.Running.Shoes
 {
-    public class ShoeTransaction
+    public class Transaction
     {
-        public ShoeTransaction(
+        public Transaction(
             decimal price,
             System.DateTime date,
             string store)
@@ -18,7 +18,7 @@ namespace RunningTracker.RunningShoes
         }
 
         public decimal Price { get; }
-        public System.DateTime Date { get; }
+        public DateTime Date { get; }
         public string Store { get; }
     }
 }

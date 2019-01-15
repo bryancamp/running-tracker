@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using RunningTracker.RunningShoes;
-using RunningTracker.WeatherConditions;
 using RunningTracker.Running;
+using RunningTracker.Running.Shoes;
+using RunningTracker.WeatherConditions;
 using RunningTracker.Running.Performance;
-using RunningTracker.RunningShoes.Decisions;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace RunningTracker.Console
 {
+    //////////////////////////////////////////////////////////////////////////
+    //
+    // This console app exercises all of the basic functionality in the repo.
+    //
+    /////////////////////////////////////////////////////////////////////////
     class Program
     {
         static void Main(string[] args)
@@ -19,7 +23,6 @@ namespace RunningTracker.Console
             var serviceController = new ServiceCollection()
                 .AddSingleton<IAppService, RunningTrackerService>();            
             RunningServiceConfiguration.Register(serviceController);
-            RunningShoeServiceConfiguration.Register(serviceController);
             RunningPerformanceServiceConfiguration.Register(serviceController);
 
             // Start the app after we've registered all of our dependencies.            

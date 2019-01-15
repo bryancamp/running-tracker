@@ -1,4 +1,4 @@
-namespace RunningTracker.RunningShoes
+namespace RunningTracker.Running.Shoes
 {
     public enum Brand
     {

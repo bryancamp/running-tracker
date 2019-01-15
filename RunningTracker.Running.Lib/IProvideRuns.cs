@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using RunningTracker.WeatherConditions;
-using RunningTracker.RunningShoes;
+using RunningTracker.Running.Shoes;
 
 namespace RunningTracker.Running
 {
@@ -106,7 +106,7 @@ namespace RunningTracker.Running
             if (!Enum.TryParse(tokens[18], out temperatureUnit))
                 throw new FormatException("Invalid temperature unit.");
 
-            var transaction = new ShoeTransaction(Convert.ToDecimal(tokens[11]), DateTime.Parse(tokens[12]), tokens[13]);
+            var transaction = new Transaction(Convert.ToDecimal(tokens[11]), DateTime.Parse(tokens[12]), tokens[13]);
             var usage = new Usage(Convert.ToDouble(tokens[9]), Convert.ToInt32(tokens[10]));                        
             var shoe = new Shoe(brand, tokens[6], Convert.ToDouble(tokens[7]), DateTime.Parse(tokens[8]), transaction, usage);
             var precipitation = new Precipitation(precipitationType, precipitationUnit, Convert.ToDouble(tokens[15]));

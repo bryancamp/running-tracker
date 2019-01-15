@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using RunningTracker.Running.Shoes;
 
 namespace RunningTracker.Running
 {
@@ -7,6 +8,7 @@ namespace RunningTracker.Running
         public static IServiceCollection Register(this IServiceCollection services)
         {
             services.AddSingleton<IProvideRuns, CsvBackedRunProvder>();
+            services.AddSingleton<IProvideRunningShoes, HardcodedRunningShoeProvider>();
             return services;
         }
     }    

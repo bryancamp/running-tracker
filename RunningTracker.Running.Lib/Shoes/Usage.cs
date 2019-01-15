@@ -1,17 +1,15 @@
-using System;
-
-namespace RunningTracker.RunningShoes
+namespace RunningTracker.Running.Shoes
 {
-    public struct Usage
+    public class Usage
     {
         public Usage(
             double numberOfMiles,
             int numberOfDays)
         {
             if (numberOfMiles < 0)
-                throw new RunningShoeException("Number of miles used must be positive.");
+                throw new ShoeException("Number of miles used must be positive.");
             if (numberOfDays < 0)
-                throw new RunningShoeException("Number of days used must be positive.");
+                throw new ShoeException("Number of days used must be positive.");
 
             NumberOfMiles = numberOfMiles;
             NumberOfDays = numberOfDays;

@@ -1,5 +1,5 @@
 ﻿using System;
-using RunningTracker.RunningShoes;
+using RunningTracker.Running.Shoes;
 using RunningTracker.WeatherConditions;
 
 namespace RunningTracker.Running

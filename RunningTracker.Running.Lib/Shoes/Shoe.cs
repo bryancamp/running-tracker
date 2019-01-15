@@ -1,17 +1,15 @@
 using System;
 
-namespace RunningTracker.RunningShoes
-{
-    public class RunningShoeException : System.Exception
+namespace RunningTracker.Running.Shoes
+{    
+    public class ShoeException : System.Exception
     {
-        public RunningShoeException(string message)
+        public ShoeException(string message)
             : base(message)
             {
 
             }
     }
-
-
 
     public class Shoe
     {
@@ -20,7 +18,7 @@ namespace RunningTracker.RunningShoes
             string model,
             double size,
             DateTime releaseDate,
-            ShoeTransaction transaction,
+            Transaction transaction,
             Usage usage)      
         {
             if (size < 0)
@@ -39,7 +37,7 @@ namespace RunningTracker.RunningShoes
         public string Model { get; }
         public double Size { get; }
         public DateTime ReleaseDate { get; }
-        public ShoeTransaction Transaction { get; }
+        public Transaction Transaction { get; }
         public Usage Usage { get; }
     }
 }

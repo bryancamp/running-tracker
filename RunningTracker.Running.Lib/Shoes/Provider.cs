@@ -1,9 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using RunningTracker.RunningShoes;
 
-namespace RunningTracker.RunningShoes
+namespace RunningTracker.Running.Shoes
 {
     public interface IProvideRunningShoes
     {
@@ -38,13 +37,13 @@ namespace RunningTracker.RunningShoes
         private void Initialize()
         {
             // TODO: this obviously shouldn't be hardcoded - store in a .csv or local database?
-            AddShoe(new Shoe(Brand.Brooks, "x10", 10.5, DateTime.Parse("2017-01-05"), new ShoeTransaction(125.25m, DateTime.Parse("2018-01-05"), "Fleet Feet"), new Usage(200, 90)));
-            AddShoe(new Shoe(Brand.Brooks, "x10", 10.5, DateTime.Parse("2017-03-05"), new ShoeTransaction(125.25m, DateTime.Parse("2018-03-05"), "Fleet Feet"), new Usage(300, 90)));
-            AddShoe(new Shoe(Brand.Brooks, "x12", 10.5, DateTime.Parse("2018-01-01"), new ShoeTransaction(125.25m, DateTime.Parse("2018-05-05"), "Fleet Feet"), new Usage(400, 90)));
-            AddShoe(new Shoe(Brand.Brooks, "x12", 10.5, DateTime.Parse("2018-01-01"), new ShoeTransaction(125.25m, DateTime.Parse("2018-07-05"), "Fleet Feet"), new Usage(150, 90)));
-            AddShoe(new Shoe(Brand.Brooks, "x12", 10.5, DateTime.Parse("2018-01-01"), new ShoeTransaction(125.25m, DateTime.Parse("2018-09-05"), "Fleet Feet"), new Usage(250, 90)));
-            AddShoe(new Shoe(Brand.Brooks, "x12", 10.5, DateTime.Parse("2018-01-01"), new ShoeTransaction(125.25m, DateTime.Parse("2018-11-05"), "Fleet Feet"), new Usage(350, 90)));
-            AddShoe(new Shoe(Brand.Brooks, "x14", 10.5, DateTime.Parse("2019-01-05"), new ShoeTransaction(125.25m, DateTime.Parse("2019-01-05"), "Fleet Feet"), new Usage(195, 90)));
+            AddShoe(new Shoe(Brand.Brooks, "x10", 10.5, DateTime.Parse("2017-01-05"), new Transaction(125.25m, DateTime.Parse("2018-01-05"), "Fleet Feet"), new Usage(200, 90)));
+            AddShoe(new Shoe(Brand.Brooks, "x10", 10.5, DateTime.Parse("2017-03-05"), new Transaction(125.25m, DateTime.Parse("2018-03-05"), "Fleet Feet"), new Usage(300, 90)));
+            AddShoe(new Shoe(Brand.Brooks, "x12", 10.5, DateTime.Parse("2018-01-01"), new Transaction(125.25m, DateTime.Parse("2018-05-05"), "Fleet Feet"), new Usage(400, 90)));
+            AddShoe(new Shoe(Brand.Brooks, "x12", 10.5, DateTime.Parse("2018-01-01"), new Transaction(125.25m, DateTime.Parse("2018-07-05"), "Fleet Feet"), new Usage(150, 90)));
+            AddShoe(new Shoe(Brand.Brooks, "x12", 10.5, DateTime.Parse("2018-01-01"), new Transaction(125.25m, DateTime.Parse("2018-09-05"), "Fleet Feet"), new Usage(250, 90)));
+            AddShoe(new Shoe(Brand.Brooks, "x12", 10.5, DateTime.Parse("2018-01-01"), new Transaction(125.25m, DateTime.Parse("2018-11-05"), "Fleet Feet"), new Usage(350, 90)));
+            AddShoe(new Shoe(Brand.Brooks, "x14", 10.5, DateTime.Parse("2019-01-05"), new Transaction(125.25m, DateTime.Parse("2019-01-05"), "Fleet Feet"), new Usage(195, 90)));
         }
 
         private void AddShoe(Shoe s)

@@ -1,11 +1,8 @@
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/bin/Debug/netstandard2.0/RunningTracker.Running.Lib.deps.json
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/bin/Debug/netstandard2.0/RunningTracker.Running.Lib.dll
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/bin/Debug/netstandard2.0/RunningTracker.Running.Lib.pdb
-/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/bin/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.dll
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/bin/Debug/netstandard2.0/RunningTracker.WeatherConditions.Lib.dll
-/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/bin/Debug/netstandard2.0/RunningTracker.RunningShoes.Lib.pdb
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/bin/Debug/netstandard2.0/RunningTracker.WeatherConditions.Lib.pdb
-/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/obj/Debug/netstandard2.0/RunningTracker.Running.Lib.csprojAssemblyReference.cache
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/obj/Debug/netstandard2.0/RunningTracker.Running.Lib.csproj.CoreCompileInputs.cache
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/obj/Debug/netstandard2.0/RunningTracker.Running.Lib.AssemblyInfoInputs.cache
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/obj/Debug/netstandard2.0/RunningTracker.Running.Lib.AssemblyInfo.cs

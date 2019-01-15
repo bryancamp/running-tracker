@@ -1,4 +1,4 @@
-using RunningTracker.RunningShoes;
+using RunningTracker;
 
 namespace RunningTracker.Running
 {
@@ -9,14 +9,14 @@ namespace RunningTracker.Running
         Miles
     }
 
-    public struct Distance
+    public class Distance
     {
         public Distance(
             double value, 
             DistanceUnit unit)
         {
             if (value < 0)
-                throw new RunningShoeException("Distance must not be negative.");
+                throw new RunningException("Distance must not be negative.");
                 
             Value = value;
             Unit = unit;

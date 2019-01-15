@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using RunningTracker.RunningShoes;
+using Microsoft.Extensions.DependencyInjection;
+using RunningTracker.Running.Shoes;
 using RunningTracker.WeatherConditions;
 using RunningTracker.Running;
 using RunningTracker.Running.Performance;
-using RunningTracker.RunningShoes.Decisions;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace RunningTracker.Console
 {
@@ -17,6 +16,11 @@ namespace RunningTracker.Console
         Task GetStartupTask();
     }
 
+    ////////////////////////////////////////////////////////////////////////
+    //
+    // This class is responsible for starting and running the application.
+    //
+    ////////////////////////////////////////////////////////////////////////
     public class RunningTrackerService : IAppService
     {
         private readonly IProvideRuns _runProvider;
