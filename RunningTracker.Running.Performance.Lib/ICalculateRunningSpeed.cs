@@ -1,19 +1,26 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using RunningTracker.Running;
 
 namespace RunningTracker.Running.Performance
 {
+    public enum RunningSpeedUnit
+    {
+        MilesPerHour,
+        KilometersPerHour
+    }
+
     public interface ICalculateRunningSpeed
     {
-        decimal CalculateAverage(IEnumerable<Run> runs);
+        double CalculateAverage(IEnumerable<Run> runs);
     }
 
     public class RunningSpeedCalculator : ICalculateRunningSpeed
     {
-        public decimal CalculateAverage(IEnumerable<Run> runs)
-        {
-            throw new NotImplementedException();
+        public double CalculateAverage(IEnumerable<Run> runs)
+        { 
+            return runs.Select(x => x.Distance.Value * x.Duration.Value).Sum() / runs.Count();
         }
     }
 }
