@@ -9,3 +9,4 @@
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/obj/Debug/netstandard2.0/RunningTracker.Running.Lib.csproj.CopyComplete
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/obj/Debug/netstandard2.0/RunningTracker.Running.Lib.dll
 /Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/obj/Debug/netstandard2.0/RunningTracker.Running.Lib.pdb
+/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/obj/Debug/netstandard2.0/RunningTracker.Running.Lib.csprojAssemblyReference.cache

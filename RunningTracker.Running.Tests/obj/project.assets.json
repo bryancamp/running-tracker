@@ -710,7 +710,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
-          "RunningTracker.RunningShoes.Lib": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
           "RunningTracker.WeatherConditions.Lib": "1.0.0"
         },
         "compile": {
@@ -720,24 +720,12 @@
           "bin/placeholder/RunningTracker.Running.Lib.dll": {}
         }
       },
-      "RunningTracker.RunningShoes.Lib/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "2.2.0"
-        },
-        "compile": {
-          "bin/placeholder/RunningTracker.RunningShoes.Lib.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/RunningTracker.RunningShoes.Lib.dll": {}
-        }
-      },
       "RunningTracker.WeatherConditions.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "2.2.0"
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
         },
         "compile": {
           "bin/placeholder/RunningTracker.WeatherConditions.Lib.dll": {}
@@ -3229,11 +3217,6 @@
       "path": "../RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj",
       "msbuildProject": "../RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj"
     },
-    "RunningTracker.RunningShoes.Lib/1.0.0": {
-      "type": "project",
-      "path": "../RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj",
-      "msbuildProject": "../RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj"
-    },
     "RunningTracker.WeatherConditions.Lib/1.0.0": {
       "type": "project",
       "path": "../RunningTracker.WeatherConditions.Lib/RunningTracker.WeatherConditions.Lib.csproj",
@@ -3243,12 +3226,12 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Microsoft.Extensions.DependencyInjection >= 2.2.0",
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 2.2.0",
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "NETStandard.Library >= 2.0.3",
       "NSubstitute >= 4.0.0-rc1",
       "NUnit3TestAdapter >= 3.11.0",
       "RunningTracker.Running.Lib >= 1.0.0",
-      "RunningTracker.RunningShoes.Lib >= 1.0.0",
       "RunningTracker.WeatherConditions.Lib >= 1.0.0",
       "nunit >= 3.11.0"
     ]
@@ -3284,9 +3267,6 @@
             "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj": {
               "projectPath": "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.Running.Lib/RunningTracker.Running.Lib.csproj"
             },
-            "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj": {
-              "projectPath": "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.RunningShoes.Lib/RunningTracker.RunningShoes.Lib.csproj"
-            },
             "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.WeatherConditions.Lib/RunningTracker.WeatherConditions.Lib.csproj": {
               "projectPath": "/Users/bryancamp/Development/CSharp/running-tracker/RunningTracker.WeatherConditions.Lib/RunningTracker.WeatherConditions.Lib.csproj"
             }
@@ -3303,6 +3283,10 @@
       "netstandard2.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
             "target": "Package",
             "version": "[2.2.0, )"
           },
