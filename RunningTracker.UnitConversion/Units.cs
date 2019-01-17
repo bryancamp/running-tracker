@@ -42,4 +42,15 @@ namespace RunningTracker.UnitConversion
         public DistanceUnit Distance { get; }
         public decimal Value { get; }
     }
+
+    public interface ICompareSpeed
+    {
+        public Speed GetFastest(Speed s1, Speed s2);
+        public Speed GetFastest(IEnumerable<Speed> speeds);
+
+        public Speed GetSlowest(Speed s1, Speed s2);
+        public Speed GetSlowest(IEnumerable<Speed> speeds);
+
+        public void SortAscending(ref IEnumerable<Speed> collectionToSort)
+    }
 }
