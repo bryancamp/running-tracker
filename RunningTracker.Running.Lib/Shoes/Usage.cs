@@ -3,7 +3,7 @@ namespace RunningTracker.Running.Shoes
     public class Usage
     {
         public Usage(
-            double numberOfMiles,
+            decimal numberOfMiles,
             int numberOfDays)
         {
             if (numberOfMiles < 0)
@@ -15,7 +15,7 @@ namespace RunningTracker.Running.Shoes
             NumberOfDays = numberOfDays;
         }
 
-        public double NumberOfMiles { get; }
+        public decimal NumberOfMiles { get; }
 
         // For example, if the shoes were used
         // Monday 12/1, Wednesday 12/3, Friday 12/5,

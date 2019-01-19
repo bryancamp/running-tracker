@@ -13,14 +13,14 @@ namespace RunningTracker.Running.Performance
 
     public interface ICalculateRunningSpeed
     {
-        double CalculateAverage(IEnumerable<Run> runs);
+        decimal CalculateAverage(IEnumerable<Run> runs);
     }
 
     public class RunningSpeedCalculator : ICalculateRunningSpeed
     {
-        public double CalculateAverage(IEnumerable<Run> runs)
+        public decimal CalculateAverage(IEnumerable<Run> runs)
         { 
-            return runs.Select(x => x.Distance.Value * x.Duration.Value).Sum() / runs.Count();
+            return Convert.ToDecimal(runs.Select(x => x.Distance.Value * (decimal) x.Duration.TotalSeconds).Sum() / runs.Count());
         }
     }
 }

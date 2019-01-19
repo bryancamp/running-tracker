@@ -8,6 +8,7 @@ using RunningTracker.Running.Shoes;
 using RunningTracker.WeatherConditions;
 using RunningTracker.Running;
 using RunningTracker.Running.Performance;
+using RunningTracker.Running.Providers;
 
 namespace RunningTracker.Console
 {
@@ -48,9 +49,9 @@ namespace RunningTracker.Console
         {
             return new Task(() =>
             {
-                var allRuns = _runProvider.GetAllRuns();
-                var allOutsideRuns = _runProvider.GetRuns(Location.Outside);
-                var allInsideRuns = _runProvider.GetRuns(Location.Treadmill);
+                var allRuns = _runProvider.GetRuns();
+                var allOutsideRuns = allRuns.Where(x => x.Location == Location.Outside);
+                var allInsideRuns = allRuns.Where(x => x.Location == Location.Treadmill);
 
                 // Do I generally run faster inside or outside?
                 // Take into account performance degredation as mileage increases.

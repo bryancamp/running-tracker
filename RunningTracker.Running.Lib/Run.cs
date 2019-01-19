@@ -24,7 +24,7 @@ namespace RunningTracker.Running
     {
         public Run(
             DateTime runDate,
-            Time duration,
+            TimeSpan duration,
             Distance distance,
             Location location,
             Shoe shoe,
@@ -49,7 +49,7 @@ namespace RunningTracker.Running
             Temperature = temperature;
         }
         public DateTime RunDate { get; }
-        public Time Duration { get; }
+        public TimeSpan Duration { get; }
         public Distance Distance { get; }
         public Location Location { get; }
         public Shoe Shoe { get; }

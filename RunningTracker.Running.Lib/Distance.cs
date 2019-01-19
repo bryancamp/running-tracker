@@ -12,7 +12,7 @@ namespace RunningTracker.Running
     public class Distance
     {
         public Distance(
-            double value, 
+            decimal value, 
             DistanceUnit unit)
         {
             if (value < 0)
@@ -22,7 +22,7 @@ namespace RunningTracker.Running
             Unit = unit;
         }
 
-        public double Value { get; }
+        public decimal Value { get; }
         public DistanceUnit Unit { get; }
     }
 }

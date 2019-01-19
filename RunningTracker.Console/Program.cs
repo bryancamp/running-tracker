@@ -32,5 +32,5 @@ namespace RunningTracker.Console
             task.Start();
             task.Wait();
         }
-    }
+    }    
 }

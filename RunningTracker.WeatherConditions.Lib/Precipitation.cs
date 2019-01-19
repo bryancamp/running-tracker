@@ -23,7 +23,7 @@ namespace RunningTracker.WeatherConditions
         public Precipitation(
             PrecipitationType type,
             PrecipitationUnit unit,
-            double amount = 0)
+            decimal amount = 0)
         {
             PrecipitationType = type;
             Unit = unit;
@@ -32,6 +32,6 @@ namespace RunningTracker.WeatherConditions
         
         public PrecipitationType PrecipitationType { get; }
         public PrecipitationUnit Unit { get; }
-        public double Amount { get; }
+        public decimal Amount { get; }
     }
 }

@@ -5,7 +5,7 @@ using System.IO;
 
 namespace RunningTracker.Running.Providers
 {
-    public class InputRecord
+    public class RawInputRecord
     {
         public string Date { get; internal set; }   
         public string Duration { get; internal set; }
@@ -18,9 +18,9 @@ namespace RunningTracker.Running.Providers
         public string ShoeReleaseDate { get; internal set; }
         public string ShoeMileage { get; internal set; }
         public string ShoeUsedDays { get; internal set; }
-        public string PurchasePrice { get; internal set; }
-        public string PurchaseDate { get; internal set; }
-        public string PurchaseStore { get; internal set; }
+        public string ShoePurchasePrice { get; internal set; }
+        public string ShoePurchaseDate { get; internal set; }
+        public string ShoePurchaseStore { get; internal set; }
         public string PrecipitationType { get; internal set; }
         public string PrecipitationAmount { get; internal set; }
         public string PrecipitationUnit { get; internal set; }
@@ -28,25 +28,26 @@ namespace RunningTracker.Running.Providers
         public string TemperatureUnit { get; internal set; }
     }
 
-    public interface IProvideInputRecords
+    public interface IProvideRawInputRecords
     {
-        IEnumerable<InputRecord> GetRecords(StreamReader inputStream);
-        IEnumerable<InputRecord> GetRecords(IEnumerable<StreamReader> inputStreams);
+        RawInputRecord GetRecord(string line);
+        IEnumerable<RawInputRecord> GetRecords(StreamReader inputStream);
+        IEnumerable<RawInputRecord> GetRecords(IEnumerable<StreamReader> inputStreams);
     }
 
-    // Proprietary csv file format:
-    // Date,Time,Distance,DistanceUnits,Location,
-    // ShoeBrand,ShoeModel,ShoeSize,ShoeReleaseDate,ShoeMileage,ShoeUsedDays,PurchasePrice,PurchaseDate,PurchaseStore,
-    // PrecipitationType,PrecipitationAmount,PrecipitationUnit,Temperature,TemperatureUnit
-
-    public class ProprietaryCsvInputRecordProvider : IProvideInputRecords
+    public class ProprietaryCsvInputRecordProvider : IProvideRawInputRecords
     {        
-        public IEnumerable<InputRecord> GetRecords(StreamReader inputStream)
+        public RawInputRecord GetRecord(string line)
+        {
+            return FromLine(line);
+        }
+
+        public IEnumerable<RawInputRecord> GetRecords(StreamReader inputStream)
         {
             if (inputStream == null)
                 throw new ArgumentNullException();
 
-            List<InputRecord> inputRecords = new List<InputRecord>();
+            List<RawInputRecord> inputRecords = new List<RawInputRecord>();
 
             string line;
             while ((line = inputStream.ReadLine()) != null) 
@@ -57,9 +58,9 @@ namespace RunningTracker.Running.Providers
             return inputRecords;
         }
 
-        public IEnumerable<InputRecord> GetRecords(IEnumerable<StreamReader> inputStreams)
+        public IEnumerable<RawInputRecord> GetRecords(IEnumerable<StreamReader> inputStreams)
         {
-            List<InputRecord> allRecords = new List<InputRecord>();
+            List<RawInputRecord> allRecords = new List<RawInputRecord>();
 
             foreach(var stream in inputStreams)
             {
@@ -69,13 +70,13 @@ namespace RunningTracker.Running.Providers
             return allRecords;
         }
 
-        private InputRecord FromLine(string lineInCsvFile)
+        private RawInputRecord FromLine(string lineInCsvFile)
         {
             var tokens = lineInCsvFile.Split(',');
             if (tokens.Length != 1)
                 throw new FormatException($"Line in CSV file is malformed: {lineInCsvFile}");
 
-            var inputRecord = new InputRecord();
+            var inputRecord = new RawInputRecord();
 
             inputRecord.Date = tokens[0];
             inputRecord.Duration = tokens[1];
@@ -88,9 +89,9 @@ namespace RunningTracker.Running.Providers
             inputRecord.ShoeReleaseDate = tokens[8];
             inputRecord.ShoeMileage = tokens[9];
             inputRecord.ShoeUsedDays = tokens[10];
-            inputRecord.PurchasePrice = tokens[11];
-            inputRecord.PurchaseDate = tokens[12];
-            inputRecord.PurchaseStore = tokens[13];
+            inputRecord.ShoePurchasePrice = tokens[11];
+            inputRecord.ShoePurchaseDate = tokens[12];
+            inputRecord.ShoePurchaseStore = tokens[13];
             inputRecord.PrecipitationType = tokens[14];
             inputRecord.PrecipitationAmount = tokens[15];
             inputRecord.PrecipitationUnit = tokens[16];
